@@ -12,120 +12,83 @@
   </style>
 </head>
 <body>
+  <div class="container1">
+    <center><h1 class="white header">Resume Builder</h1></center>
+    
+    <select id="selectField" class="padding11">
+      <option id="select">Select</option>
+      <option id='name'>Name</option>
+      <option id='description'>Description</option>
+      <option id='education'>Education</option>
+      <option id='project'>Project</option>
+      <option id='campusActivities'>Campus Activities</option>
+      <option id='contact'>Contact</option>
+      <option id='technicalSkills'>Technical Skills</option>
+      <option id='achivements'>Achievement</option>
+      <option id='certificate'>Certificate</option>
+      <option id='interests'>Interests</option>
+    </select>
+
+    <div id="formContainer" class="padding11">
+    </div>
+  </div>
+
   <div class="container">
     <div class="upper">
       <div class="intro">
-        <p1 class="size5">Vraj Ankleshwaria</p1>
-        <p1 class="size3 blue_font">Competitive Coding Enthusiast</p1>
-        <p1 class="size2">Always eager to learn new technologies and develop something innovative.</p1>
+        <p1 class="size5" id="fullName0" >Vraj Ankleshwaria</p1>
+        <p1 class="size3 blue_font" id="peronDescription0">Competitive Coding Enthusiast</p1>
+        <p1 class="size2" id="peronSubDescription0">Always eager to learn new technologies and develop something innovative.</p1>
       </div>
     </div>
     <div class="middle grid-container">
       <div class="iconsize">
-        <i class="fa fa-envelope white"> 
-          <a href="https://vraj2001sa@gmail.com" target="_blank" class="white link"> vraj2001sa@gmail.com</a>
+        <i class="fa fa-envelope white">
+          <a href="https://vraj2001sa@gmail.com" target="_blank" class="white link" id="email0">vraj2001sa@gmail.com</a>
         </i>
       </div>
       <div class="iconsize">
-        <i class="fa fa-mobile-phone white left_padding">
-          8758813549
+        <i class="fa fa-mobile-phone white link" id="phone0">
+           8758813549
         </i>
       </div>
       <div class="iconsize">
-        <i class="fa fa-map-marker white">
-           Ahmedabad, India
+        <i class="fa fa-map-marker white" id="address0">
+          Ahmedabad, India
         </i>
       </div>
       <div class="iconsize">
-        <i class="fa fa-linkedin white left_padding">
-          <a href="https://www.linkedin.com/in/vraj-ankleshwaria-6578b51b1/" target="_blank" class="white link"> linkedin.com/in/vraj-ankleshwaria-6578b51b1/</a>
+        <i class="fa fa-linkedin white">
+          <a href="https://www.linkedin.com/in/vraj-ankleshwaria-6578b51b1/" target="_blank" class="white link" id="linkedin0"> linkedin.com/in/vraj-ankleshwaria-6578b51b1/</a>
         </i>
       </div>
       <div class="iconsize">
         <i class="fa fa-github white">
-          <a href="https://github.com/vrajankleshwaria" target="_blank" class="white link"> github.com/vrajankleshwaria</a>
+          <a href="https://github.com/vrajankleshwaria" target="_blank" class="white link" id="github0"> github.com/vrajankleshwaria</a>
         </i>
       </div>
     </div>
-    <div class="grid-container3 grid-container1">
+    <div class="grid-container1">
       
       <div class="padding3">
           <!-- 1 -->
           <div class="padding">
             <div class="size3 blue_font left_padding"><b>EDUCATION</b></div>
-            <div class="extendraw">
-              <div class="temp blue_font"><b>___</b></div>
-              <div class="fullwidth">
-                <div class="size3"><b>B. Tech in Computer Science And Engineering</b></div>
-                <div class="size2">Institude Of Technology, Nirma University</div>
-                <div class="div-upper size1 blue_font">
-                  <div class="div-left">07/2018 - Present</div>
-                  <div class="div-right">CGPA : 8.13</div>
-                </div>
-              </div>
-            </div>  
-            <div class="extendraw">
-              <div class="temp blue_font"><b>___</b></div>
-              <div class="fullwidth">
-                <div class="size3"><b>HSC</b></div>
-                <div class="size2">Kameshwar Vidhyalaya</div>
-                <div class="div-upper size1 blue_font">
-                  <div class="div-left">06/2016 - 05/2018</div>
-                  <div class="div-right">99.48 percentile</div>
-                </div>
-              </div>
-            </div>  
+            <div id="educationContainer"></div>
           </div>
           <!-- 2 -->
           <div class="padding">
             <div class="size3 blue_font left_padding"><b>PROJECTS</b></div>
             <div class="extendraw">
               <div class="temp"></div>
-              <div class="fullwidth">
-                <div class="padding3">
-                  <div class="size2 padding1">Codeforces Helper (10/2020)</div>
-                    <ul>
-                      <li class="size1">Application for competitive programers where the Major functionalities are Upcoming contests, upsolve contests, Problem List, bookmark problems, Download problem, Friend List, Profile etc. It is also published on Play Store.</li>
-                      <li class="size1">Technology used are Flutter Framework and Dart language.</li>
-                      <li class="size1">CodeForces API used for to fetch data.</li>
-                    </ul>
-                </div>
-                <div class="padding3">
-                  <div class="size2 padding1">Bank Management System (05/2020)</div>
-                  <ul>
-                    <li class="size1">Online Management system, which can be used by the customer, employee, and manager for a different activity like login, signup, add employee/manager, view details, update details, transaction details, etc</li>
-                    <li class="size1">Technology used are Html, CSS as front-end and Nodejs, MySQL as back-end.</li>
-                  </ul>
-                </div>
-                <div class="padding3">
-                  <div class="size2 padding1">ATM Management System (12/2019)</div>
-                    <ul>
-                      <li class="size1">Developed a Java project to handle all ATM functionality like sign in, sign up, credit, withdrawal, check balance, etc with full exception handling.</li>
-                      <li class="size1">Different Java Concepts are used.</li>
-                    </ul>
-                </div>
+              <div class="fullwidth" id="projectContainer">
               </div>
             </div>  
           </div>
           <!-- 3 -->
           <div class="padding">
-            <div class="size3 blue_font left_padding"><b>CAMPUS ACTIVITIES</b></div>
-            <div class="extendraw">
-              <div class="temp blue_font"><b>___</b></div>
-              <div class="fullwidth">
-                <div class="size3"><b>Volunteering</b></div>
-                <div class="size2">Jyot Foundation</div>
-                <div class="size1 opacity">we worked for 21 days under Jyot Foundation for helping children suffering from Blood Cancer and helped oldage home</div>
-              </div>
-            </div>  
-            <div class="extendraw">
-              <div class="temp blue_font"><b>___</b></div>
-              <div class="fullwidth">
-                <div class="size3"><b>Active Learning</b></div>
-                <div class="size2">Nirma University</div>
-                <div class="size1 opacity">Participated in various contests organized by seniors on codeforces platform under Nirma University group "CodeAdda".</div>
-              </div>
-            </div>  
+            <b><div class="size3 blue_font left_padding">CAMPUS ACTIVITIES</div></b>
+            <div id="activityContainer"></div>
           </div>
         </div>
         <div class="padding3">
@@ -133,74 +96,36 @@
           <div class="padding">
             <div class="size3 blue_font left_padding"><b>TECHNICAL SKILLS</b></div>
             <div class="size2">
-              <div class="extendraw1 left_padding">
-                <div class="boxed">Data Structure</div>
-                <div class="boxed">Algorithms</div>
-                <div class="boxed">Problem Solving</div>
-                <div class="boxed">C++</div>
-                <div class="boxed">Java</div>
-                <div class="boxed">Flutter</div>
-                <div class="boxed">Dart</div>
-                <div class="boxed">Html</div>
-                <div class="boxed">CSS</div>
-                <div class="boxed">Node Js</div>
-                <div class="boxed">Express Js</div>
-                <div class="boxed">SQL</div>
+              <div class="extendraw1 left_padding" id="skillContainer">
               </div>
             </div>
           </div>
           <!-- 5 -->
           <div class="padding">
             <div class="size3 blue_font left_padding"><b>ACHIEVEMENTS</b></div>
-            <div class="left_padding">
-              <div class="padding2">
-                <div class="size2">Candidate Master on Codeforces</div>
-                <div class="size1 opacity">ID: VRAJ1408 (Rating: 1910)</div>
-              </div>
-              <div class="padding2">
-                <div class="size2">Codeforces Helper</div>
-                <div class="size1 opacity">2000+ downloads on play store with 4.9 rating (80+ review)</div>
-              </div>
-              <div class="padding2">
-                <div class="size2">Codeforces Round #629</div>
-                <div class="size1 opacity">Rank: 289</div>
-              </div>
-              <div class="padding2">
-                <div class="size2">Qualified in Google Codejam (04/2020)</div>
-                <div class="size1 opacity">Rank: 2102</div>
-              </div>
-              <div class="padding2">
-                <div class="size2">Five Star on Hackerrank</div>
-                <div class="size1 opacity">Achievement: Gold Badge</div>
-              </div>
+            <div class="left_padding" id="achievementContainer">
             </div> 
           </div>
           <!-- 6 -->
           <div class="padding">
             <div class="size3 blue_font left_padding"><b>CERTIFICATES</b></div>
-            <div class="left_padding">
-              <div class="padding2">
-                <div class="size2">Introduction to Flutter Development (07/2020)</div>
-                <div class="size1 opacity">Issued by appbrewery</div>
-              </div>
+            <div class="left_padding" id="certificateContainer">
             </div>
           </div>
           <!-- 7 -->
           <div class="padding">
             <div class="size3 blue_font left_padding"><b>INTERESTS</b></div>
             <div class="size2">
-              <div class="extendraw1 left_padding">
-                <div class="boxed1">Chess</div>
-                <div class="boxed1">Puzzles</div>
-                <div class="boxed1">Gaming</div>
-                <div class="boxed1">Sports</div>
-                <div class="boxed1">Music</div>
-                <div class="boxed1">Travelling</div>
+              <div class="extendraw1 left_padding" id="interestContainer">
               </div>
             </div>
           </div>
         </div>
     </div>
   </div>
+
+  <script src="index.js">
+  </script>
+
 </body>
 </html>

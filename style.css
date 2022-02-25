@@ -9,6 +9,10 @@ body{
     min-height: 100vh;
 }
 
+.margin{
+  margin: 1 rem;
+}
+
 .container{
     position: relative;
     width: 100%;
@@ -19,6 +23,19 @@ body{
     background: white;
     display: grid;
     grid-template-rows: 4fr 3fr 25fr;
+}
+
+.container1{
+  position: relative;
+  width: 50%;
+  min-height: 10rem;
+  max-width: 100rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  background: white;
+
+  /* display: grid;
+  grid-template-rows: 4fr 3fr 25fr; */
 }
 
 .container .upper{
@@ -55,11 +72,15 @@ body{
 
 /* .row {
   display: flex;
-}
+} */
 
-.column {
+/* .column {
   flex: 50%;
 } */
+
+.margin{
+  margin: 0.5rem;
+}
 
 .grid-container{
   display: grid;
@@ -110,6 +131,16 @@ body{
  padding: 2rem;
 }
 
+.padding11{
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: rgba(69,91,163,255);
+  border-radius: 1rem;
+  box-shadow: rgba(69,91,163,255);
+  margin: 0.5rem;
+  padding: 0.5rem;
+ }
+
 .padding2{
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
@@ -127,14 +158,26 @@ body{
   font-size:medium;
 }
 
-/* .list{
-  padding-left: 2.5rem;
-} */
+.add{
+  width: 15rem;
+  margin: 0.5rem;
+  background-color: rgba(92,184,91,255);
+  border-radius: 0.7rem;
+}
 
-/* .temp{
-  font-size: 2rem;
-  overflow-wrap: break-word;
-} */
+.delete{
+  width: 15rem;
+  margin: 0.5rem;
+  border-radius: 0.7rem;
+  background-color:#e6496b;
+}
+
+.update{
+  width: 15rem;
+  margin: 0.5rem;
+  border-radius: 0.7rem;
+  background-color: rgba(255,192,5,255);
+}
 
 .size1{
   font-size: 1.3rem;
@@ -145,6 +188,10 @@ body{
   font-size: 1.6rem;
   padding: 0.2rem;
   overflow-wrap: break-word;
+}
+.label{
+  min-width: max-content;
+  text-align:center;
 }
 .size3{
   font-size: 2rem;
@@ -169,6 +216,7 @@ body{
 .white{
   color: white;
   overflow-wrap: break-word;
+  background-color: rgba(69,91,163,255);
 }
 
 .left_padding{
@@ -231,9 +279,19 @@ ul{
   text-decoration: none;
 }
 
+.header{
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-radius: 3rem;
+  padding: 0.35rem;
+}
+
 @media only screen and (max-width: 992px) {
   html {
     font-size: 55%;
+  }
+  .grid-container1{
+    grid-template-columns: 1fr;
   }
 }
 
@@ -241,7 +299,9 @@ ul{
   html {
     font-size: 65%;
   }
-  .grid-container1{
-    grid-template-columns: 1fr;
-  }
+  
+}
+
+.label{
+  font-weight: bolder;
 }
