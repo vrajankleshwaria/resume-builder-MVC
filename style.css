@@ -1,55 +1,58 @@
-html{
+:root {
+  --div-margin-left: 2.5rem;
+  --div-margin-right: 2.5rem;
+  --white-background-color: rgba(255, 255, 255, 255);
+  --blue-background-color: rgba(69, 91, 163, 255);
+  --green-background-color: rgba(92, 184, 91, 255);
+  --yellow-background-color: rgba(255, 192, 5, 255);
+  --red-background-color: #e6496b;
+}
+
+html {
   font-size: 62.5%;
 }
 
-body{
-    background-color: rgba(82,86,88,255);
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
+body {
+  background-color: rgba(82, 86, 88, 255);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.margin{
-  margin: 1 rem;
+.resume-container {
+  position: relative;
+  width: 100%;
+  min-height: 10rem;
+  max-width: 100rem;
+  margin-right: var(--div-margin-left);
+  margin-left: var(--div-margin-right);
+  background: white;
+  display: grid;
+  grid-template-rows: 4fr 3fr 25fr;
 }
 
-.container{
-    position: relative;
-    width: 100%;
-    min-height: 10rem;
-    max-width: 100rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
-    background: white;
-    display: grid;
-    grid-template-rows: 4fr 3fr 25fr;
-}
-
-.container1{
+.form-container {
   position: relative;
   width: 50%;
   min-height: 10rem;
   max-width: 100rem;
-  margin-right: 5rem;
-  margin-left: 5rem;
+  margin-right: var(--div-margin-right);
+  margin-left: var(--div-margin-left);
   background: white;
-
-  /* display: grid;
-  grid-template-rows: 4fr 3fr 25fr; */
 }
 
-.container .upper{
+.resume-container .upper {
   position: relative;
-  background-color: rgba(255,255,255,255);
+  background-color: var(--white-background-color);
   padding: 2.5rem;
   font-size: 2rem;
   display: flex;
   align-items: center;
 }
 
-.container .middle{
+.resume-container .middle {
   position: relative;
-  background-color: rgba(69,91,163,255);
+  background-color: var(--blue-background-color);
   padding-left: 2.5rem;
   padding-top: 1.2rem;
   padding-right: 2.5rem;
@@ -57,195 +60,161 @@ body{
   font-size: 2rem;
 }
 
-.container .lower{
+.resume-container .lower {
   position: relative;
-  background-color: rgba(255,255,255,255);
+  background-color: var(--white-background-color);
   font-size: 2rem;
 }
 
-.intro{
+.intro {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-/* .row {
-  display: flex;
-} */
-
-/* .column {
-  flex: 50%;
-} */
-
-.margin{
-  margin: 0.5rem;
-}
-
-.grid-container{
+.contact-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0.5rem;
   padding: 1rem;
 }
 
-.grid-container1{
+.resume-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.grid-container2{
-  display: grid;
-  grid-template-columns: 1fr 18fr;
-}
-
-.temp{
+.blank-container {
   width: 2.5rem;
 }
 
-.extendraw{
+.extend-raw {
   position: relative;
   display: flex;
   flex-direction: row;
   padding: 1 rem;
 }
 
-.extendraw1{
+.boxed-item {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   padding: 2 rem;
 }
 
-.fullwidth{
+.fullwidth {
   width: 100%;
 }
 
-.padding{
+.main-container {
+  padding: 0.2rem;
+}
+
+.sub-container {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
   padding-right: 1rem;
 }
 
-.padding1{
- padding: 2rem;
-}
-
-.padding11{
+.boxed-container {
   border-style: solid;
   border-width: 0.2rem;
-  border-color: rgba(69,91,163,255);
+  border-color: var(--blue-background-color);
   border-radius: 1rem;
-  box-shadow: rgba(69,91,163,255);
+  box-shadow: var(--blue-background-color);
   margin: 0.5rem;
   padding: 0.5rem;
- }
-
-.padding2{
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
 }
 
-.padding3{
-  padding: 0.2rem;
+.icon {
+  font-size: medium;
 }
 
-.fontsize{
-  font-size: 1.6px;
-}
-
-.iconsize{
-  font-size:medium;
-}
-
-.add{
+.add {
   width: 15rem;
   margin: 0.5rem;
-  background-color: rgba(92,184,91,255);
+  background-color: var(--green-background-color);
   border-radius: 0.7rem;
 }
 
-.delete{
+.delete {
   width: 15rem;
   margin: 0.5rem;
   border-radius: 0.7rem;
-  background-color:#e6496b;
+  background-color: var(--red-background-color);
 }
 
-.update{
+.update {
   width: 15rem;
   margin: 0.5rem;
   border-radius: 0.7rem;
-  background-color: rgba(255,192,5,255);
+  background-color: var(--yellow-background-color);
 }
 
-.size1{
+.h1 {
   font-size: 1.3rem;
   padding: 0.2rem;
   overflow-wrap: break-word;
 }
-.size2{
+.h2 {
   font-size: 1.6rem;
   padding: 0.2rem;
   overflow-wrap: break-word;
 }
-.label{
-  min-width: max-content;
-  text-align:center;
-}
-.size3{
+.h3 {
   font-size: 2rem;
   padding: 0.2rem;
   overflow-wrap: break-word;
 }
-.size4{
+.h4 {
   font-size: 2.4rem;
   padding: 0.2rem;
   overflow-wrap: break-word;
 }
-.size5{
+.h5 {
   font-size: 3rem;
   padding: 0.2rem;
   overflow-wrap: break-word;
 }
 
-.blue_font{
-  color: rgba(69,91,163,255);
+.blue {
+  color: var(--blue-background-color);
 }
 
-.white{
+.white {
   color: white;
   overflow-wrap: break-word;
-  background-color: rgba(69,91,163,255);
+  background-color: var(--blue-background-color);
 }
 
-.left_padding{
+.left-padding {
   padding-left: 2.5rem;
 }
 
-ul{
+ul {
   padding-left: 2.5rem;
   margin-top: 0;
 }
 
-.div-upper{
- padding: 0;
+.upper-container {
+  padding: 0;
 }
 
-.div-left{
-  float:left;
+.left-container {
+  float: left;
   width: 45%;
 }
 
-.div-right{
-  float:right;
+.right-container {
+  float: right;
   width: 40%;
   text-align: right;
   padding-right: 2rem;
 }
 
-.boxed{
-  background-color: rgba(69,91,163,255);
+.boxed {
+  background-color: var(--blue-background-color);
   padding-left: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -257,29 +226,24 @@ ul{
   margin-right: 0.7rem;
 }
 
-.boxed1{
+.boxed-transparent {
   border-style: solid;
-  border-color: rgba(127,128,128,255);
+  border-color: rgba(127, 128, 128, 255);
   border-width: 0.2rem;
-  padding-left: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-right: 1rem;
   border-radius: 0.8rem;
-  margin-top: 0.35rem;
-  margin-bottom: 0.35rem;
-  margin-right: 0.7rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  margin: 0.35rem 0.7rem 0.35rem 0rem;
 }
 
-.opacity{
+.opacity {
   opacity: 0.5;
 }
 
-.link{
+.link {
   text-decoration: none;
 }
 
-.header{
+.header {
   margin-left: 3rem;
   margin-right: 3rem;
   border-radius: 3rem;
@@ -290,7 +254,7 @@ ul{
   html {
     font-size: 55%;
   }
-  .grid-container1{
+  .resume-grid-container1 {
     grid-template-columns: 1fr;
   }
 }
@@ -299,9 +263,8 @@ ul{
   html {
     font-size: 65%;
   }
-  
 }
 
-.label{
+.label {
   font-weight: bolder;
 }
